@@ -1,0 +1,7 @@
+POST http://localhost:3001/api/products
+Content-Type: application/json
+
+{
+    "name": "ApleeWacht",
+    "price": 299.99
+}
