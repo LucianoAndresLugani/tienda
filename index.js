@@ -1,8 +1,6 @@
 const express = require('express');
 const morgan = require('morgan'); // Importamos morgan
 const app = express();
-const PORT = 3001;
-const port = process.env.PORT || 3001;
 
 const cors = require('cors')
 
@@ -78,6 +76,7 @@ app.post('/api/products', (req, res) => {
 });
 
 // Iniciar el servidor
+const PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-});
+  console.log(`Server running on port ${PORT}`)
+})
