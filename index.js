@@ -2,7 +2,7 @@ const express = require('express');
 const morgan = require('morgan'); // Importamos morgan
 const app = express();
 const PORT = 3001;
-
+const port = process.env.PORT || 4000;
 // Middleware para interpretar JSON en el cuerpo de las solicitudes
 app.use(express.json());
 
